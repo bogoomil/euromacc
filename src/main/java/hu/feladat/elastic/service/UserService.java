@@ -28,13 +28,12 @@ public class UserService {
 
     public UserSearchResponse search(String firstName, String lastName) {
         List<User> users = repository.findByFirstNameLikeOrLastNameLike(firstName, lastName);
-        UserSearchResponse response = convertSearchResultToDto(users);
-        return response;
+        return convertSearchResultToDto(users);
     }
 
     private UserSearchResponse convertSearchResultToDto(List<User> users) {
         UserSearchResponse response = new UserSearchResponse();
-        response.setTotal((long) users.size());
+        response.setTotal(users.size());
         users.forEach(user -> response.getUsers().add(convertEntityToDto(user)));
         return response;
     }

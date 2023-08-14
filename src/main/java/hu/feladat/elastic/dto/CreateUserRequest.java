@@ -1,6 +1,5 @@
 package hu.feladat.elastic.dto;
 
-import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotEmpty;
 
 public class CreateUserRequest {

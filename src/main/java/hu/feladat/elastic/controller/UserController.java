@@ -5,7 +5,6 @@ import hu.feladat.elastic.dto.CreateUserRequest;
 import hu.feladat.elastic.dto.UserResponse;
 import hu.feladat.elastic.dto.UserSearchRequest;
 import hu.feladat.elastic.dto.UserSearchResponse;
-import hu.feladat.elastic.entity.User;
 import hu.feladat.elastic.exception.ElasticException;
 import hu.feladat.elastic.service.UserService;
 import jakarta.validation.Valid;
