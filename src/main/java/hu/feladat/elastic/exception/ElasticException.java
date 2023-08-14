@@ -3,7 +3,7 @@ package hu.feladat.elastic.exception;
 import java.util.List;
 
 public class ElasticException extends RuntimeException {
-    List<String> messages;
+    private List<String> messages;
     public ElasticException(List<String> messages) {
         this.messages = messages;
     }
